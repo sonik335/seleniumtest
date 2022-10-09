@@ -20,7 +20,8 @@ public class KartaTest {
         $("[name='phone']").setValue("+79179129317");
         $("[data-test-id=agreement]").click();
         $$("button").find(exactText("Продолжить")).click();
-        //$("order-success").shouldHave(exactText("Ваша заявка успешно отправленна! Наш менеджер свяжется с вами в ближайшее время."));
+        $("[data-test-id=order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+
 
     }
 
